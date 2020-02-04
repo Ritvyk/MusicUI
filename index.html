@@ -42,12 +42,12 @@
                     <p class="text-small text-center text-grey p-0 m-0">Feat.Liam Payne | Lazer</p>
                 </div>
                 <div class="loader-wrapper">
-                    <div class="timings mb-1 d-flex justify-content-between align-items-center text-grey">
-                        <p class="m-0 p-0 text-extra-sm">1:25</p>
-                        <p class="m-0 p-0 text-extra-sm">4:20</p>
-                    </div>
+                    <!-- <div class="timings mb-1 d-flex justify-content-between align-items-center text-grey">
+                        <p class="m-0 p-0 text-extra-sm" id="start-time">00</p>
+                        <p class="m-0 p-0 text-extra-sm" id="end-time"></p>
+                    </div> -->
                     <div class="loader-out d-flex justify-content-start align-items-center">
-                        <div class="loader-in d-flex justify-content-end align-items-center">
+                        <div id="loader-in" class="loader-in d-flex justify-content-end align-items-center">
                             <div class="loader-follow d-flex justify-content-center align-items-center">
                                 <div class="loader-follow-in">
                                     <!-- to create a hole in between the followe -->
@@ -69,15 +69,15 @@
                     <div class="cta">
                         <i class="fa fa-backward"></i>
                     </div>  
-                    <div class="cta">
-                        <i class="fa fa-pause"></i>
+                    <div data-action="play" class="cta" onclick="playMusic(this)">
+                        <i id="stateIcon" class="fa fa-play"></i>
                     </div>  
                     <div class="cta">
                         <i class="fa fa-forward"></i>
                     </div>  
                 </div>
             </div>
-            <audio controls autoplay class="d-none">
+            <audio  id="player" controls autoplay class="d-none">
                 <source src="./playlist/sample.mp3" type="audio/mp3" >
               Your browser does not support the audio element.
               </audio>
