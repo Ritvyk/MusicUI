@@ -42,9 +42,9 @@ function playMusic(obj) {
     }
 }
 // //initialize
-// function setPlayer() {
-//   alert("Player Loaded Successfully !");
-// }
-// window.onload = function () {
-//     setPlayer();
-// }
+ function setPlayer() {
+   alert("Player Loaded Successfully ! Click On Play Button");
+ }
+ window.onload = function () {
+     setPlayer();
+}
